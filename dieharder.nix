@@ -1,4 +1,6 @@
-{ mkDerivation, gsl, ... }@args:
+{ stdenv
+, gsl
+, ... }@args:
 
 let source = builtins.fetchTarball {
              url = "https://webhome.phy.duke.edu/~rgb/General/dieharder/dieharder-3.31.1.tgz";
@@ -19,7 +21,7 @@ let source = builtins.fetchTarball {
                         #include <sys/stat.h>
                         #include <unistd.h>
                     '';
- in mkDerivation {
+ in stdenv.mkDerivation {
       name = "dieharder";
       inherit src;
       buildInputs = [ gsl ];
