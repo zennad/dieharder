@@ -1,1 +1,0 @@
-${dieharder.src}/${(builtins.elemAt (builtins.attrName (builtins.readDir dieharder.src)) 0)}
