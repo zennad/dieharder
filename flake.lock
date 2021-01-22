@@ -1,0 +1,43 @@
+{
+  "nodes": {
+    "dieharder": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611326430,
+        "narHash": "sha256-LYgkGYUGV31YKQe3JROVeJ8qRWxT/FOD2z+bOctyMi8=",
+        "owner": "zennad",
+        "repo": "dieharder",
+        "rev": "583db676cf3fbb98f832ed3d966b2ff9fb16c148",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zennad",
+        "ref": "dieharder-source",
+        "repo": "dieharder",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1611330693,
+        "narHash": "sha256-dWWPVEhrDxtBDdG5o6kmiZdlAV2yjih3fr85H3LEX9U=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f2c88014c8cc7b93be871248747e17528da2b3bf",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "dieharder": "dieharder",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
