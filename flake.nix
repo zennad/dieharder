@@ -32,5 +32,11 @@
           patchFlags = "-p0";
         };
     defaultPackage.x86_64-linux = self.packages.x86_64-linux.dieharder;
+    apps.x86_64-linux.dieharder =
+      {
+        type = "app";
+        program = "${self.packages.x86_64-linux.dieharder}/bin/dieharder";
+      };
+    defaultApp.x86_64-linux = self.apps.x86_64-linux.dieharder;
   };
 }
